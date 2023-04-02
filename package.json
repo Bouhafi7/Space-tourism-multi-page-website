@@ -1,0 +1,14 @@
+{
+  "dependencies": {
+    "gulp": "^4.0.2",
+    "gulp-htmlmin": "^5.0.1",
+    "gulp-json-minify": "^1.2.2",
+    "gulp-sourcemaps": "^3.0.0",
+    "gulp-util": "^3.0.8"
+  },
+  "devDependencies": {
+    "gulp-clean-css": "^4.3.0",
+    "gulp-concat": "^2.6.1",
+    "gulp-terser": "^2.1.0"
+  }
+}

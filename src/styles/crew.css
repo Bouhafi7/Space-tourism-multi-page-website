@@ -1,0 +1,196 @@
+header{
+    min-height: 100vh;
+    background-image: url(../assets/crew/background-crew-desktop.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    overflow: hidden;
+}
+
+
+@media (min-width:781px){
+    header .container .content h2:last-child{
+        display: none;
+    }
+}
+
+@media (max-width:991px){
+    header{
+        background-image: url(../assets/crew/background-crew-tablet.jpg);
+    }
+}
+
+@media (max-width:781px){
+    header{
+        background-image: url(../assets/crew/background-crew-mobile.jpg);
+    }
+}
+
+header .container .content{
+    color: white;
+    margin-top: 50px;
+    display: flex;
+    justify-content: space-between;
+    gap: 100px;
+}
+
+header .container .content > div{
+    width: 50%;
+}
+
+header .container .content .pic{
+    margin-top: 140px;
+}
+
+header .container .content .pic img{
+    transition: all .5s ease-in-out;
+}
+
+header .container .content h2 {
+    font-family: Barlow Condensed;
+    text-transform: uppercase;
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    letter-spacing: 3px;
+    font-weight: 400;
+    font-size: 30px;
+    margin-bottom: 180px;
+    color: white;
+}
+
+header .container .content .infos h2 span {
+    color: rgba(255, 255, 255, 0.4);
+    font-weight: 500;
+}
+
+
+header .container .content .job{
+    font-size: 40px;
+    text-transform: uppercase;
+    color: rgba(255,255,255,.5);
+    font-family: Bellefair;
+    transition: all .5s ease-in-out;
+}
+
+header .container .content .name{
+    text-transform: uppercase;
+    font-size: 55px;
+    margin: 20px auto 40px;
+    font-family: Bellefair;
+    transition: all .5s ease-in-out;
+}
+
+header .container .content .desc{
+    line-height: 2;
+    margin-right: 160px;
+    font-weight: 300;
+    color: rgba(255, 255, 255, 0.9);
+    transition: all .5s ease-in-out;
+}
+
+header .container .content .bullets{
+    margin-top: 150px;
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+header .container .content .bullets li{
+    background-color: rgba(255, 255, 255, 0.4);
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    cursor: pointer;
+    transition: all .2s;
+}
+
+header .container .content .bullets li.active{
+    background-color: white;
+}
+
+header .container .content .bullets li:hover{
+    background-color: rgba(255, 255, 255, 0.8);
+}
+
+
+@media (max-width:1500px){
+    header .container .content .desc {
+        margin-right: 0;
+    }
+    header .container .content .bullets {
+        margin-top: 80px;
+    }
+}
+
+@media (max-width:1191px){
+    header .container .content .pic img{
+        width: 100%;
+    }
+}
+
+@media (max-width:991px){
+    header .container .content .pic{
+        width: 40%;
+    }
+}
+
+@media (max-width:781px){
+    header .container .content{
+        flex-direction: column-reverse;
+            gap: 0;
+    }
+    header .container .content .infos h2{
+        display: none;
+    }
+    header .container .content .pic{
+        width: 100%;
+        margin: 30px auto;
+    }
+    header .container .content > div{
+        width: 100%;
+    }
+    header .container .content h2 {
+        margin-bottom: 0;
+    }
+    header .container .content .infos{
+        display: flex;
+        flex-direction: column-reverse;
+        justify-content: center;
+    }
+    header .container .content .bullets {
+        margin: 20px auto;
+    }
+    header .container .content .desc {
+        margin: 10px auto;
+        text-align: center;
+    }
+    header .container .content .name {
+        font-size: 40px;
+        text-align: center;
+    }
+    header .container .content .job {
+        font-size: 34px;
+        text-align: center;
+        margin: auto;
+    }
+}
+
+
+@media (max-width:360px){
+    header .container .content h2 {
+        font-size: 23px;
+    }
+    header .container .content .job {
+        font-size: 25px;
+    }
+    header .container .content .bullets {
+        margin: 20px auto 40px;
+    }
+    header .container .content .name {
+        font-size: 30px;
+    }
+    header .container .content .desc {
+        font-size: 15px;
+        margin: 10px auto 30px;
+    }
+}

@@ -1,0 +1,215 @@
+header{
+    min-height: 100vh;
+    background-image: url(../assets/destination/background-destination-desktop.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    overflow-x: hidden;
+}
+
+
+@media (max-width:991px){
+    header{
+        background-image: url(../assets/destination/background-destination-tablet.jpg);
+    }
+}
+
+@media (max-width:781px){
+    header{
+        background-image: url(../assets/destination/background-destination-mobile.jpg);
+    }
+}
+
+header .container .content{
+    color: white;
+    margin-top: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 100px;
+}
+
+header .container .content > div{
+    width: 50%;
+}
+
+header .container .content .planet h2{
+    font-family: Barlow Condensed;
+    text-transform: uppercase;
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    letter-spacing: 3px;
+    font-weight: 400;
+    font-size: 30px;
+    margin-bottom: 80px;
+}
+
+header .container .content .infos{
+    margin-top: 120px;
+}
+
+header .container .content .planet h2 span{
+    color: rgba(255, 255, 255, 0.5);
+    font-weight: 500;
+}
+
+header .container .content .planet img{
+    margin-left: 80px;
+    animation: planet 100s infinite linear;
+    transition: all .3s ease-in-out;
+}
+
+@keyframes planet {
+    from{
+        transform: rotate(0deg);
+    }
+    to{
+        transform: rotate(360deg);
+    }
+}
+
+header .container .content .infos .menu-planet-info{
+    font-family: Barlow Condensed;
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 30px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+header .container .content .infos .menu-planet-info li{
+    color: rgba(255, 255, 255, 0.7);
+    padding: 20px 0;
+    cursor: pointer;
+    position: relative;
+    transition: all .2s;
+}
+
+header .container .content .infos .menu-planet-info li::before{
+    content: '';
+    position: absolute;
+    width: 0;
+    height: 3px;
+    left: 50%;
+    transform: translate(-50%);
+    bottom: 0;
+    background-color: rgba(255, 255, 255, 0.9);
+    transition: all .2s ease-in-out;
+}
+
+header .container .content .infos .menu-planet-info li:hover::before{
+    width: 100%;
+}
+
+header .container .content .infos .menu-planet-info li.active{
+    color: white;
+}
+header .container .content .infos .menu-planet-info li.active::before{
+    width: 100%;
+}
+
+
+header .container .content .infos .planet-name{
+    margin: 50px 0 20px;
+    font-size: 120px;
+    text-transform: uppercase;
+    font-family: Bellefair;
+    transition: all .3s ease-in-out;
+}
+
+header .container .content .infos .planet-desc{
+    line-height: 1.9;
+    margin: 0 120px 20px 0;
+    color: rgba(255, 255, 255, 0.8);
+    padding-bottom: 40px;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.3);
+    transition: all .3s ease-in-out;
+}
+
+
+header .container .content .infos .distance-travelTime{
+    display: flex;
+    align-items: center;
+    gap: 80px;
+    text-transform: uppercase;
+    font-family: Epilogue;
+}
+
+header .container .content .infos .distance-travelTime > div > p:first-child{
+    font-weight: 100;
+    letter-spacing: .3px;
+    font-size: 14px;
+    margin-bottom: 10px;
+}
+
+header .container .content .infos .distance-travelTime :is(.avg-distance, .est-travel){
+    font-size: 30px;
+    font-weight: 300;
+    transition: all .3s ease-in-out;
+}
+
+@media (max-width:1500px){
+    header .container .content .infos .planet-desc {
+        margin: 0 0px 20px 0;
+    }
+    header .container .content .infos .distance-travelTime :is(.avg-distance, .est-travel) {
+        font-size: 25px;
+    }
+    header .container .content .planet img {
+        margin-left: 20px;
+    }
+}
+
+@media (max-width:991px){
+    header .container .content{
+        flex-direction: column;
+    }
+    header .container .content > div {
+        width: 100%;
+    }
+    header .container .content {
+        gap: 0;
+    }
+    header .container .content .infos {
+        margin: 50px auto;
+    }
+}
+
+@media (max-width:781px){
+    header .container .content .planet img {
+        margin: 0 auto;
+        width: 80%;
+    }
+    header .container .content .planet h2 {
+        font-size: 25px;
+    }
+    header .container .content .infos .planet-name {
+        font-size: 100px;
+    }
+    header .container .content .infos .distance-travelTime :is(.avg-distance, .est-travel) {
+        font-size: 23px;
+    }
+}
+
+@media (max-width:360px){
+    header .container .content .planet h2 {
+        font-size: 19px;
+    }
+    header .container .content .infos .menu-planet-info {
+        gap: 15px;
+        font-size: 15px;
+    }
+    header .container .content .infos .planet-name {
+        font-size: 80px;
+    }
+    header .container .content .infos .planet-desc {
+        font-size: 15px;
+    }
+    header .container .content .infos .distance-travelTime > div > p:first-child {
+        font-size: 12px;
+    }
+    header .container .content .infos .distance-travelTime :is(.avg-distance, .est-travel) {
+        font-size: 18px;
+    }
+}
